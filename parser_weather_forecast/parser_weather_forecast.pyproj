@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e22336f0-3617-45e3-9de3-a32f9ea9a7ee</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>parser_weather_forecast.py</StartupFile>
+    <StartupFile>main_weather_tg_bot.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="parser_weather_forecast.py" />
+    <Compile Include="main.py" />
+    <Compile Include="config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="emoji.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main_weather_tg_bot.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
